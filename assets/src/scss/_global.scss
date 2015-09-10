@@ -1,0 +1,54 @@
+/**
+ * Global app/site styles
+ */
+body {
+	background-color: $color-bg;
+	text-align: center;
+}
+
+/**
+ * Default layout container
+ */
+.l-container {
+	padding-left: #{$layout-margin}px;
+	padding-right: #{$layout-margin}px;
+	width: 95%;
+	max-width: #{$layout-max-width}px;
+	margin: 0 auto;
+
+	.lt-ie9 & {
+		min-width: #{$layout-min-width}px;
+	}
+}
+
+.mobile-break {
+	display: block;
+
+	@include respond-min($bp-narrow){
+		display: none;
+	}
+}
+
+.timeContainer {
+	display: block;
+	height: 350px;
+	left: -175px;
+	position: absolute;
+	width: 350px;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+.emoji{
+	display: inline-block;
+	height: 200px;
+	margin: 0 auto;
+	width: 200px;
+}
+
+.flag {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	vertical-align: middle;
+}
