@@ -9,7 +9,7 @@ module.exports = {
 
 		console.debug('Here comes the rain!');
 
-		var API_KEY = "a0ca16e077624c07eed0d454dee8678c";
+		var API_KEY = "###";
 		var API_UNIT_TYPE = "metric";
 		var API_URL = "http://api.openweathermap.org/data/2.5/weather?APPID=" + API_KEY + "&units=" + API_UNIT_TYPE;
 
